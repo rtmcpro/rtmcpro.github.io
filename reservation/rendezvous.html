@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        section {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+        }
+        form {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            font-family: Arial, sans-serif;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            font-family: Arial, sans-serif;
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation de rendez-vous</title>
+</head>
+<body>
+
+<h2>Réservation de rendez-vous</h2>
+<form action="reservation.php" method="post">
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" required><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+  
+    <label for="telephone">Téléphone:</label>
+    <input type="tel" id="telephone" name="telephone" required><br><br>
+  
+    <label for="service">Service:</label>
+    <select id="service" name="service" required>
+        <option value="Révision">Révision</option>
+        <option value="Freinage">Freinage</option>
+        <option value="Transmission">Transmission</option>
+        <option value="Liaison au sol">Liaison au sol</option>
+        <option value="Montage de pneus">Montage de pneus</option>
+        <option value="Courroire de distribution">Courroire de distribution</option>
+    </select><br><br>
+  
+    <label for="date">Date de rendez-vous:</label>
+    <input type="date" id="date" name="date" required><br><br>
+  
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+  
+    <input type="submit" value="Réserver">
+</form>
+
+</body>
+</html>
